@@ -24,7 +24,7 @@ def generate_questions(text):
     for sentence in sentences:
         sentence = sentence.strip()
         if len(sentence.split()) > 8:
-            questions.append("Explain in detail: " + sentence)
+            questions.append("What is the significance of: " + sentence + "?")
 
     random.shuffle(questions)
     return questions[:10]
